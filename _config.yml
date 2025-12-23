@@ -1,3 +1,34 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+url: "http://installationissue.github.io"
+# baseurl: "" # the subpath of your site, e.g. /blog
+lang: en-AU
+
+title: Arbitrary Analysis
+author: Aye Aye
+# email: ""
+# description: ""
+
+# bluesky_username: ""
+github_username:  installationissue
+
+# Exclude from processing.
+exclude:
+  - README.md
+  - .devcontainer/
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+topics:
+  - Homelabbing
+  - Software Development
+  - Cyber Security
+  - Systems Administration
+  - Tabletop RPGs
+  - General Critique

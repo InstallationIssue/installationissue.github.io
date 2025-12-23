@@ -2,8 +2,71 @@ $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
+$brickEmber: #C03221;
+$pacificCyan: #188FA7;
+$twilightIndigo: #123068;
+$royalGold: #F4D35E;
+// #D89F00;
+// #F4D35E;
+$ashGrey: #D1EDED;
+// #96BBBB;
+
 body {
-  background: $backgroundColor;
+  background: $ashGrey;
   color: $bodyColor;
   font-family: $bodyFont;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+nav {
+  background: $brickEmber;
+  border: 0;
+  border-top: 0.25rem;
+  border-bottom: 0.25rem;
+  border-style: solid;
+  border-color: $royalGold;
+  height: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+nav a {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: $royalGold;
+}
+
+.content {
+  margin-inline: 0.5rem;
+}
+
+.logo {
+  height: 250%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  padding: 0.5rem;
+  border: $royalGold;
+  border-style: solid;
+  margin-inline: 0.5rem;
+  background-color: $brickEmber;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.logoimg {
+  height: 90%;
+  fill: $royalGold
+}
+
+.sidebar {
+  display: flex;
+  
 }

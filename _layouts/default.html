@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="icon" type="image/png" href="/assets/arban-small.png">
   </head>
   <body>
-    {{ content }}
+    <nav>
+      <a class="logo" href="/">
+        <img class="logoimg" src="assets/arban.svg" alt="Arbitrary Analysis Logo">
+      </a>
+      <span>
+        <a>github</a>
+        <a>linkedin</a>
+        <a></a>
+      </span>
+    </nav>
+    <div class="content">
+      {{ content }}
+      <div class="sidebar">
+        <h3></h3>
+        {% for topic in site.topics %}  
+        <a>{{ topic }}</a>
+        {% endfor %}
+      </div>
+    </div>
   </body>
 </html>

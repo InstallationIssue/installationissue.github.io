@@ -1,8 +1,13 @@
 ---
+title: Welcome
 layout: default
-title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.
+## Welcome to {{ site.title }} by {{ site.author }}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

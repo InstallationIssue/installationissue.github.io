@@ -1,13 +1,22 @@
-# Installation Issue/ Angus Frost Portfolio Showcase
+# Arbitrary Analysis
+*By Aye-Aye*
 
-This is a static website utilising github pages with the purpose of presenting my personal software projects
+### Preamble
 
-## Preamble
+This is a personal blog meant for documenting and sharing any and all interests, projects and commentary on a variety of topics including:
+* Software Development
+* Systems Administration
+* Cyber Security
+* Homelabbing
+* General Critique
+* Tabletop RPGs
 
-## Projects
+### Testing
 
-### Wake on Lan
+```bash
+# For local testing
+jekyll serve --livereload --drafts
 
-### Rats-in-Transit
-
-### Web-Provisioner
+# For server testing
+jekyll build
+```
