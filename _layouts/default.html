@@ -12,18 +12,21 @@
       <a class="logo" href="/">
         <img class="logoimg" src="assets/arban.svg" alt="Arbitrary Analysis Logo">
       </a>
+      <h3><b>Welcome to {{ site.title }}</b> <i>by {{ site.author }}</i></h3>
       <span>
-        <a>github</a>
-        <a>linkedin</a>
-        <a></a>
+        <a href="/">home</a>
+        <a href="{{ site.github_link }}">github</a>
+        <a href="{{ site.linkedin_link }}">linkedin</a>
       </span>
     </nav>
-    <div class="content">
-      {{ content }}
+    <div class="cover">
+      <div class="content">
+        {{ content }}
+      </div>
       <div class="sidebar">
-        <h3></h3>
+        <b>Topics</b>
         {% for topic in site.topics %}  
-        <a>{{ topic }}</a>
+        <a href="/{{ topic.path }}">{{ topic .title}}</a>
         {% endfor %}
       </div>
     </div>

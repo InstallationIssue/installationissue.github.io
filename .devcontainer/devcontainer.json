@@ -12,7 +12,7 @@
 	"forwardPorts": [4000],
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "jekyll serve --livereload --drafts"
+	// "postCreateCommand": "jekyll serve --livereload --drafts"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

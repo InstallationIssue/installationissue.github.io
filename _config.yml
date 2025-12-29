@@ -9,26 +9,24 @@ author: Aye Aye
 
 # bluesky_username: ""
 github_username:  installationissue
+github_link: https://github.com/InstallationIssue
+linkedin_link: https://www.linkedin.com/in/angus-frost-se/
 
 # Exclude from processing.
 exclude:
   - README.md
   - .devcontainer/
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 topics:
-  - Homelabbing
-  - Software Development
-  - Cyber Security
-  - Systems Administration
-  - Tabletop RPGs
-  - General Critique
+  - title: Homelabbing
+    path: homelab
+  - title: Software Development
+    path: software
+  - title: Cyber Security
+    path: cyber
+  - title: Systems Administration
+    path: sysadmin
+  - title: Tabletop RPGs
+    path: tabletop
+  - title: General Critique
+    path: critique

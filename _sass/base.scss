@@ -8,8 +8,8 @@ $twilightIndigo: #123068;
 $royalGold: #F4D35E;
 // #D89F00;
 // #F4D35E;
-$ashGrey: #D1EDED;
-// #96BBBB;
+$ashGrey: #edf7f7;
+$cloudGrey: #96BBBB;
 
 body {
   background: $ashGrey;
@@ -32,7 +32,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: $royalGold;
 }
 
 nav a {
@@ -40,11 +42,28 @@ nav a {
   border-radius: 1rem;
   font-weight: 600;
   text-align: center;
-  color: $royalGold;
+}
+
+.cover {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
 }
 
 .content {
-  margin-inline: 0.5rem;
+  flex-grow: 3;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-style: double;
+  border-radius: 1rem;
+  border-color: $cloudGrey;
+  padding: 0.5rem;
+  height: fit-content;
+  margin: 0.5rem;
+  gap: 0.25rem;
 }
 
 .logo {
@@ -64,9 +83,4 @@ nav a {
 .logoimg {
   height: 90%;
   fill: $royalGold
-}
-
-.sidebar {
-  display: flex;
-  
 }
