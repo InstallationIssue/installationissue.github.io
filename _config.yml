@@ -16,6 +16,10 @@ linkedin_link: https://www.linkedin.com/in/angus-frost-se/
 exclude:
   - README.md
   - .devcontainer/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
 
 topics:
   - title: Homelabbing
