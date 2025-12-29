@@ -26,11 +26,11 @@ topics:
     path: homelab
   - title: Software Development
     path: software
-  - title: Cyber Security
-    path: cyber
+  # - title: Cyber Security
+  #   path: cyber
   - title: Systems Administration
     path: sysadmin
-  - title: Tabletop RPGs
-    path: tabletop
-  - title: General Critique
-    path: critique
+  # - title: Tabletop RPGs
+  #   path: tabletop
+  # - title: General Critique
+  #   path: critique
