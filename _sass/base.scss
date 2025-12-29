@@ -2,13 +2,15 @@ $backgroundColor: #ffffff;
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
+$lateRust: #d7594b;
+$lateRustSelect: #ad4539;
 $brickEmber: #C03221;
 $pacificCyan: #188FA7;
 $twilightIndigo: #123068;
 $royalGold: #F4D35E;
 // #D89F00;
 // #F4D35E;
-$ashGrey: #edf7f7;
+$ashGrey: #dadddf;
 $cloudGrey: #96BBBB;
 
 body {
@@ -17,6 +19,22 @@ body {
   font-family: $bodyFont;
   margin: 0;
   margin-top: 1rem;
+}
+
+footer {
+  background-color: $cloudGrey;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+}
+
+a:hover {
+  color: #123068;
+}
+
+a:visited {
+  color: purple;
 }
 
 nav {
@@ -44,6 +62,44 @@ nav a {
   text-align: center;
 }
 
+nav span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  margin-inline: 1rem;
+}
+
+nav span a {
+  background-color: $lateRust;
+  display: flex;
+  border-radius: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  margin: 0;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav span a:hover {
+  background-color: $lateRustSelect;
+}
+
+.navicon {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.github {
+  height: 85%;
+}
+
+.linkedin {
+  height: 90%;
+}
+
 .cover {
   display: flex;
   flex-direction: row;
@@ -51,11 +107,13 @@ nav a {
 }
 
 .content {
-  flex-grow: 3;
+  flex-grow: 1;
 }
 
 .sidebar {
   display: flex;
+  max-width: 12rem;
+  min-width: 12rem;
   flex-direction: column;
   border-style: double;
   border-radius: 1rem;
@@ -78,6 +136,10 @@ nav a {
   display: flex;
   align-items: start;
   justify-content: center;
+}
+
+.logo:hover {
+  background-color: $lateRustSelect;
 }
 
 .logoimg {

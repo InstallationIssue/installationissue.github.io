@@ -5,18 +5,24 @@
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="icon" type="image/png" href="/assets/arban-small.png">
+    <link rel="icon" type="image/png" href="/assets/images/arban-small.png">
   </head>
   <body>
     <nav>
       <a class="logo" href="/">
-        <img class="logoimg" src="assets/arban.svg" alt="Arbitrary Analysis Logo">
+        <img class="logoimg" src="/assets/images/arban.svg" alt="Arbitrary Analysis Logo">
       </a>
       <h3><b>Welcome to {{ site.title }}</b> <i>by {{ site.author }}</i></h3>
       <span>
-        <a href="/">home</a>
-        <a href="{{ site.github_link }}">github</a>
-        <a href="{{ site.linkedin_link }}">linkedin</a>
+        <a href="/">
+          <img class="navicon" src="/assets/images/home.svg" alt="home icon"/>
+        </a>
+        <a href="{{ site.github_link }}">
+          <img class="navicon github" src="/assets/images/github-mark.svg" alt="github logo"/>
+        </a>
+        <a href="{{ site.linkedin_link }}">
+          <img class="navicon linkedin" src="/assets/images/linkedin-icon.svg" alt="linkedin logo"/>
+        </a>
       </span>
     </nav>
     <div class="cover">
@@ -30,5 +36,9 @@
         {% endfor %}
       </div>
     </div>
+    <footer>
+      <i>© 2025 Angus Frost</i>
+      <!-- Sitemap/useful links? -->
+    </footer>
   </body>
 </html>
