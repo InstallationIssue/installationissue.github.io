@@ -1,0 +1,22 @@
+.logo {
+  height: 250%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  padding: 0.5rem;
+  border: $secondary;
+  border-style: solid;
+  margin-inline: 0.5rem;
+  background-color: $primary;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.logo:hover {
+  background-color: $logoHover;
+}
+
+.logoimg {
+  height: 90%;
+  fill: $secondary;
+}
