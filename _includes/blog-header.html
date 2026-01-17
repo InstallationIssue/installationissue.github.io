@@ -1,0 +1,29 @@
+<nav class="blog-header">
+  {% include logo.html %}
+  <h3>{{ site.title }}</h3>
+  <span>
+    {% include icon-link.html
+      url="/" 
+      src="/assets/images/home.svg"
+      alt="home"
+    %}
+    {% include icon-link.html
+      url="/about" 
+      src="/assets/images/info.svg"
+      alt="info/about"
+      class="info"
+    %}
+    {% include icon-link.html
+      url=site.linkedin_link
+      src="/assets/images/linkedin-icon.svg"
+      alt="linkedin"
+      class="linkedin"
+    %}
+    {% include icon-link.html
+      url=site.github_link 
+      src="/assets/images/github-mark.svg"
+      alt="github"
+      class="github"
+    %}
+  </span>
+</nav>
