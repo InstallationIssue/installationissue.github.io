@@ -1,0 +1,15 @@
+.blog-footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  background-color: $primary;
+  color: $secondary;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  // border: 1px solid $twilightIndigo;
+  // border-left: 0;
+  // border-right: 0;
+}
