@@ -3,6 +3,7 @@ url: "http://installationissue.github.io"
 lang: en-AU
 
 title: Arbitrary Analysis
+titleShort: ArbAn
 author: Aye Aye
 # email: ""
 # description: ""
@@ -26,11 +27,11 @@ topics:
     path: homelab
   - title: Software Development
     path: software
-  # - title: Cyber Security
-  #   path: cyber
+  - title: Cyber Security
+    path: cyber
   - title: Systems Administration
     path: sysadmin
-  # - title: Tabletop RPGs
-  #   path: tabletop
+  - title: Tabletop RPGs
+    path: tabletop
   # - title: General Critique
   #   path: critique
