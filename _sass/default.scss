@@ -1,14 +1,14 @@
-$primary-100: hsl(6,80,70);
-$primary-300: hsl(6,70,50);
-$primary-500: hsl(6,85,34);
-$primary-700: hsl(6,85,25);
-$primary-900: hsl(6,85,15);
+$neutral-100: hsl(48, 100%, 98%);
+$neutral-300: hsl(50, 49%, 86%);
+$neutral-500: hsl(49, 25%, 70%);
+$neutral-700: hsl(0,0,30);
+$neutral-900: hsl(0,0,10);
 
-$accent-100: hsl(150,100,90);
-$accent-300: hsl(150,95,80);
-$accent-500: hsl(150,90,65);
-$accent-700: hsl(150,80,50);
-$accent-900: hsl(150,90,30);
+$confirmation-100: hsl(150,100,90);
+$confirmation-300: hsl(150,95,80);
+$confirmation-500: hsl(150,90,65);
+$confirmation-700: hsl(150,80,50);
+$confirmation-900: hsl(150,90,30);
 
 $warning-100: hsl(30,90,85);
 $warning-300: hsl(30,80,65);
@@ -22,147 +22,81 @@ $danger-500: hsl(350,70,50);
 $danger-700: hsl(350,80,35);
 $danger-900: hsl(350,90,20);
 
-$neutral-100: hsl(0,0,90);
-$neutral-300: hsl(0,0,70);
-$neutral-500: hsl(0,0,50);
-$neutral-700: hsl(0,0,30);
-$neutral-900: hsl(0,0,10);
+// $primary-100: hsl(6,80,70);
+// $primary-300: hsl(6,70,50);
+$primary-500: hsl(6, 93%, 59%);
+$primary-700: hsl(6,85,25);
+// $primary-900: hsl(6,85,15);
 
-$background: #ffffff;
-// #e7decd;
-// #ffffff;
-$bodyColor: #000000;
+// $accent-100: hsl();
+// $accent-300: hsl();
+// $accent-500: hsl();
+// $accent-700: hsl();
+// $accent-900: hsl();
+
+$secondary: hsl(264,88,33);
+$logoHover: hsl(281,81,50);
+$secondary-dark: hsl(265, 95%, 8%);
+
+$background: hsl(50, 67%, 96%);
+$bodyColor: hsl(264, 71%, 5%);
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
-$primary: #9f1c0d;
-$secondary: #EADEDA;
-// #fbfaf8;
-// #EADEDA;
-// #F4D35E;
-// #D89F00;
-// #F4D35E;
-// $lateRust: #d7594b;
-// #ce2411;
-$logoHover: #6c1005;
-$buttonHover: #ad4539;
-
-// $pacificCyan: #188FA7;
-// $twilightIndigo: #123068;
-// $ashGrey: #e8edf1;
-// $cloudGrey: #96BBBB;
-// $celadon: #b4edd2;
-
 body {
-  background: $background;
+  background: $neutral-100;
   color: $bodyColor;
   font-family: $bodyFont;
   margin: 0;
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
+  margin-inline: 1rem;
   min-height: 100%;
-}
-
-
-a:hover {
-  color: #123068;
-}
-
-a:visited {
-  color: purple;
-}
-
-p {
-  margin-top: 0;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-.cover {
   display: flex;
   flex-direction: row;
-  margin: 1.5rem;
-  gap: 1.5rem;
+  gap: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2 {
+  margin: 0.5rem;
+  line-height: 1;
 }
 
 .content {
-  flex-grow: 1;
+  padding: 0.3rem;
   border-radius: 1rem;
-}
-
-.sidebar {
-  display: flex;
-  // max-width: 12rem;
-  // min-width: 12rem;
-  width: 16rem;
-  flex-direction: column;
-  height: fit-content;
-  gap: 0.5rem;  
-}
-
-.sidebar div {
+  width: 80%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  border-radius: 1rem;
-  padding: 1rem;
-  background-color: $secondary;
-  gap: 0.5rem;
 }
 
-.sidebar div a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-decoration: none;
-  flex-grow: 1;
+.content p {
+  margin-inline: 0.5rem;
+  margin-block: 1rem;
+  text-align: justify;
 }
 
-.index ul {
+.empty {
+  width: 10%;
+}
+
+li {
   list-style-type: none;
+}
+
+ul {
   padding: 0;
-  margin: 0;
 }
 
-.index li {
-  padding: 0.8rem;
-  background-color: $secondary;
-  border-radius: 1rem;
-  margin-bottom: 0.5rem;
+img {
+  max-height: 24rem;
 }
 
-.index li a {
-  font-weight: 600;
-  // color: $bodyColor;
-  text-decoration: none;
+table {
+  width: 100%;
 }
 
-.page {
+tr {
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  background-color: $secondary;
-  border-radius: 1rem;
-}
-
-.tilecontainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.tile {
-  background-color: $secondary;
-  padding: 1rem;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  width:25%;
-  color: $bodyColor;
-  text-align: center;
-  font-weight: 600;
-}
-
-.tile:hover {
-  background-color: $buttonHover;
+  justify-content: space-around;
 }

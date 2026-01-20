@@ -1,0 +1,48 @@
+<div class="sidebar">
+  <div class="topbar">
+    {% include logo.html %}
+    <h2>{{ site.titleShort }}</h2>
+  </div>
+  <div class="navbar">
+    <div class="navlinks">
+      {% include icon.html
+        url="/" 
+        src="/assets/images/home.svg"
+        alt="home"
+      %}
+      {% include icon.html
+        url="/about" 
+        src="/assets/images/info.svg"
+        alt="info/about"
+        class="info"
+      %}
+      {% include icon.html
+        url=site.linkedin_link
+        src="/assets/images/linkedin-icon.svg"
+        alt="linkedin"
+        class="linkedin"
+      %}
+      {% include icon.html
+        url=site.github_link 
+        src="/assets/images/github-mark.svg"
+        alt="github"
+        class="github"
+      %}
+    </div>
+    <div class="sidebar-lists">
+      <b>Topics</b>
+      {% for topic in site.topics %}  
+      <a href="/{{ topic.path }}">{{ topic.title }}</a>
+      {% endfor %}
+    </div>
+    <div class="sidebar-lists">
+      <b>Recent Posts</b>
+      {% for post in site.posts %}
+      <div class="entry">
+        <a href="/{{ post.url }}">{{ post.title }}</a>
+        <span>{{ post.date| date: "%d-%b" }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

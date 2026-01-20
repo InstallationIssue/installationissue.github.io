@@ -1,0 +1,70 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:18rem;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  background-color: $primary-500;
+  border-radius: 1rem;
+  width: 16rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  box-shadow: 0px 2px 1px 1px $primary-700;
+  z-index: 1;
+  padding-inline: 1rem;
+  // filter: drop-shadow(0 0 1px $primary-500);
+}
+
+.topbar h2 {
+  margin-top: 0.7rem;
+  padding-inline: 1.5rem;
+}
+
+.navbar {
+  margin: 1rem;
+  margin-top: 0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: $neutral-300;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  gap: 1.5rem;
+}
+
+.navlinks {
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.sidebar-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.sidebar-lists .entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 1.2rem;
+  max-height: 2.4rem;
+}
+
+.sidebar-lists .entry a {
+  // word-wrap: break-word;
+  // word-wrap: ;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

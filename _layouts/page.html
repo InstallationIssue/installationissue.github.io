@@ -5,8 +5,4 @@ layout: default
 <div class="page">
   {{ content }}
 </div>
-<div class="tilecontainer">
-  {% for topic in site.topics %}  
-  <a class="tile" href="/{{ topic.path }}">{{ topic.title }}</a>
-  {% endfor %}
-</div>
+{% include tiles.html %}

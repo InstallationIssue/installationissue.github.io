@@ -1,15 +1,16 @@
 .logo {
-  height: 250%;
+  height: 150%;
   aspect-ratio: 1;
   border-radius: 100%;
   padding: 0.5rem;
   border: $secondary;
   border-style: solid;
-  margin-inline: 0.5rem;
-  background-color: $primary;
+  background-color: $background;
   display: flex;
   align-items: start;
   justify-content: center;
+  box-shadow: 0 0 0 2px $secondary-dark;
+  box-shadow: 0 0 4px 0px $secondary-dark;
 }
 
 .logo:hover {
